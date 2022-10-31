@@ -1,0 +1,14 @@
+{
+  "name": "battlemetrics.js",
+  "version": "0.0.1-alpha.2",
+  "description": "Client for the BattleMetrics API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bombitmanbomb",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
