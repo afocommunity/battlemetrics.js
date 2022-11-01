@@ -2,13 +2,21 @@
   "name": "battlemetrics.js",
   "version": "0.0.1-alpha.2",
   "description": "Client for the BattleMetrics API",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "/types",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "bombitmanbomb",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^18.11.8",
     "typescript": "^4.8.4"
+  },
+  "optionalDependencies": {
+    "node-fetch": "^3.2.10"
+  },
+  "dependencies": {
+    "@sapphire/async-queue": "^1.5.0"
   }
 }
