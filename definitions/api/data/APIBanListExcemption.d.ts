@@ -1,6 +1,6 @@
 declare interface APIBanListExcemption extends APIBase {
   id: string;
-  type: `banExemption`;
+  type: 'banExemption';
   attributes: APIAttributes<{
     reason?: Nullable<string>;
   }>

@@ -1,6 +1,6 @@
 declare interface APISession extends APIBase {
   id: string;
-  type: `session`;
+  type: 'session';
   attributes: APIAttributes<{
     firstTime: boolean
     name: string

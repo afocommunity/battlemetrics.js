@@ -1,6 +1,6 @@
 declare interface APIUser extends APIBase {
   id: string;
-  type: `user`;
+  type: 'user';
   attributes: APIAttributes<{
     nickname: string;
   }>

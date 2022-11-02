@@ -1,4 +1,4 @@
-import { enumerable } from "../util/enumerable"
+import { enumerable } from '../util/enumerable'
 
 export class Client {
 

@@ -1,4 +1,4 @@
-import type {Client} from "../client/Client"
+import type {Client} from '../client/Client'
 import { APIRequest } from './APIRequest';
 export class RESTClient {
   public client: Client

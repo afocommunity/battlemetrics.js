@@ -1,6 +1,6 @@
 declare interface APIBanListInvite extends APIBase {
   id: string;
-  type: `banListInvite`;
+  type: 'banListInvite';
   attributes: APIAttributes<{
     uses: number
     limit?: Nullable<number>;

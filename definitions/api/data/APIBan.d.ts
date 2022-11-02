@@ -1,6 +1,6 @@
 declare interface APIBan extends APIBase {
   id: `${number}`;
-  type: `ban`;
+  type: 'ban';
   attributes: APIAttributes<{
     autoAddEnabled: boolean;
     expires?: Nullable<string>;

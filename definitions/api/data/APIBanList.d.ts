@@ -1,6 +1,6 @@
 declare interface APIBanList extends APIBase {
   id: string;
-  type: `banList`;
+  type: 'banList';
   attributes: APIAttributes<{
     action: 'none' | 'log' | 'kick';
     defaultAutoAddEnabled: boolean;
@@ -25,7 +25,7 @@ declare interface APIBanList extends APIBase {
     >
     servers?: Nullable<APIData<{
       id: string;
-      type: `server`
+      type: 'server'
       meta?: Nullable<{
         action: string;
         defaultNativeEnabled?: Nullable<null>;

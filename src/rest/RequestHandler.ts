@@ -1,6 +1,6 @@
-import type { RESTClient } from "./RESTClient";
+import type { RESTClient } from './RESTClient';
 import type { APIRequest } from './APIRequest';
-import { AsyncQueue } from "@sapphire/async-queue"
+import { AsyncQueue } from '@sapphire/async-queue'
 
 export class RequestHandler {
   public remaining: number
