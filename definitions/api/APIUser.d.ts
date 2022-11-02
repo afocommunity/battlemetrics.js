@@ -9,7 +9,7 @@ declare interface APIBanList extends APIBase {
     defaultReasons: string[];
     name: string;
     nativeBanPermMaxExpires: Nullable<number>;
-    nativeBanTTL: Nullable<number>;
+    nativeBanTTL: number | null;
     nativeBanTempMaxExpires: Nullable<number>;
     permCreate: boolean;
     permDelete: boolean;
@@ -23,18 +23,18 @@ declare interface APIBanList extends APIBase {
         id: string;
       }
     }
-    'servers'?: null | {
+    'servers': Nullable<{
       data: {
         id: string;
         type: `server`
         meta: Nullable<{
           action: string;
-          defaultNativeEnabled: Nullable<null>;
+          defaultNativeEnabled: Nullable<boolean>;
           nativeBanPermMaxExpires: Nullable<number>;
           nativeBanTTL: Nullable<number>;
           nativeBanTempMaxExpires: Nullable<number>;
-        }>;
+        }>
       }
-    }
+    }>
   }
 }

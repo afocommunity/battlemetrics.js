@@ -3,7 +3,7 @@ declare interface APIBanListInvite extends APIBase {
   type: `banListInvite`;
   attributes: {
     uses: number
-    limit?: number | null
+    limit: Nullable<number>;
     permManage: boolean
     permCreate: boolean
     permUpdate: boolean

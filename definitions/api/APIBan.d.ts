@@ -3,11 +3,11 @@ declare interface APIBan extends APIBase {
   type: `ban`;
   attributes: {
     autoAddEnabled: boolean;
-    expires?: string | null;
+    expires: Nullable<string>;
     id: `${number}`;
     identifiers: (number | APIIdentifier)[];
-    nativeEnabled?: boolean | null;
-    note?: string | null;
+    nativeEnabled: Nullable<boolean>;
+    note: Nullable<string>;
     orgWide: boolean;
     reason: string;
     timestamp: string;

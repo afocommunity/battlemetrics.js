@@ -2,7 +2,7 @@ declare interface APIBanListExcemption extends APIBase {
   id: string;
   type: `banExemption`;
   attributes: {
-    reason: string | null
+    reason: Nullable<string>;
   }
   relationships: APIRelationships<'ban' | 'organization'>
 }

@@ -6,8 +6,8 @@ declare interface APINativeBan extends APIBase {
     "createdAt": string,
     "updatedAt": string,
     "updateAt": string,
-    "reason"?: string | null,
-    "expires"?: string | null,
+    "reason": Nullable<string> ,
+    "expires": Nullable<string> ,
   }
   relationships: APIRelationships<'ban' | 'organization' | 'server'>
 }
