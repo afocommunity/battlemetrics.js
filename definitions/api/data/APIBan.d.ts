@@ -1,7 +1,7 @@
 declare interface APIBan extends APIBase {
   id: `${number}`;
   type: `ban`;
-  attributes: {
+  attributes: APIAttributes<{
     autoAddEnabled: boolean;
     expires?: Nullable<string>;
     id: `${number}`;
@@ -12,7 +12,7 @@ declare interface APIBan extends APIBase {
     reason: string;
     timestamp: string;
     uid: string;
-  }
+  }>
   meta: {
     player: string;
   }
