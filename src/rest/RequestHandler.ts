@@ -13,8 +13,14 @@ export class RequestHandler {
     this.reset = -1
   }
 
+  get globalSecondLimited(): boolean {
+    return (this.rest.globalSecondRemaining <= 0 && Date.now() < (this.rest.globalSecondReset ?? Infinity))
+  }
+  get globalMinuteLimited(): boolean {
+    return (this.rest.globalMinuteRemaining <= 0 && Date.now() < (this.rest.globalMinuteReset ?? Infinity));
+  }
   get globalLimited(): boolean {
-    return this.rest.globalRemaining <= 0 && Date.now() < (this.rest.globalReset ?? Infinity);
+    return this.globalSecondLimited || this.globalMinuteLimited
   }
 
   get localLimited() {
@@ -30,10 +36,18 @@ export class RequestHandler {
   async execute(request: APIRequest) {
     //TODO
   }
-  globalDelayFor(ms: number) {
+  globalSecondDelayFor(ms: number) {
     return new Promise(resolve => {
       setTimeout(() => {
-        this.rest.globalDelay = null;
+        this.rest.globalSecondDelay = null;
+        resolve(void 0);
+      }, ms).unref();
+    });
+  }
+  globalMinuteDelayFor(ms: number) {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        this.rest.globalMinuteDelay = null;
         resolve(void 0);
       }, ms).unref();
     });
