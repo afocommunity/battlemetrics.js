@@ -9,6 +9,9 @@ export class Client {
   public accessToken?: string
 
   constructor(options: ClientOptions) {
-    this.options = { ...{ endpoint: 'https://api.battlemetrics.com/' }, ...options }
+    this.options = {
+      ...{ endpoint: 'https://api.battlemetrics.com/' },
+      ...options
+    }
   }
 }
