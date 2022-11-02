@@ -28,7 +28,7 @@ export class RequestHandler {
     return this.queue.remaining === 0 && !this.limited;
   }
   async execute(request: APIRequest) {
-
+    //TODO
   }
   globalDelayFor(ms: number) {
     return new Promise(resolve => {
@@ -38,7 +38,7 @@ export class RequestHandler {
       }, ms).unref();
     });
   }
-  
+
   async onRateLimit() {
     return;
   }
