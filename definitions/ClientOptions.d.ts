@@ -1,4 +1,4 @@
-export declare interface ClientOptions {
+declare interface ClientOptions {
   endpoint: string
   restGlobalRateLimit: number
 }

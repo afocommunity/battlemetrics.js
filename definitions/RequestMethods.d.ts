@@ -1,1 +1,1 @@
-export declare type RequestMethods = 'get' | 'post' | 'delete' | 'patch' | 'put';
+declare type RequestMethods = 'get' | 'post' | 'delete' | 'patch' | 'put';
