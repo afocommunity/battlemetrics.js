@@ -1,4 +1,4 @@
-declare interface APIBanList extends APIBase {
+export declare interface APIBanList extends APIBase {
   id: string;
   type: 'banList';
   attributes: APIAttributes<{

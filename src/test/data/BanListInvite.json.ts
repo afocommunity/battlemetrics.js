@@ -1,4 +1,5 @@
-export const BanListInviteJSON: APIBanListInvite = {
+import { APIStructure } from "../../../definitions"
+export const BanListInviteJSON: APIStructure.APIBanListInvite = {
   "type": "banListInvite",
   "id": "rygK6AV7YW",
   "attributes": {

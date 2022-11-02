@@ -1,4 +1,5 @@
-export const CommandStatsJSON: APICommandStats = {
+import { APIStructure } from "../../../definitions"
+export const CommandStatsJSON: APIStructure.APICommandStats = {
   "id": "1:1",
   "type": "commandStats",
   "attributes": {

@@ -1,4 +1,4 @@
-declare interface APICommandStats extends APIBase {
+export declare interface APICommandStats extends APIBase {
   id: `${number}:${number}`;
   type: 'commandStats';
   attributes?: APIAttributes<Nullable<unknown>> //TODO: What is this
