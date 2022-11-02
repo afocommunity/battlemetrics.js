@@ -1,13 +1,11 @@
 declare interface APICommandStats extends APIBase {
   id: `${number}:${number}`;
   type: `commandStats`;
-  attributes: Nullable<{}>
+  attributes?: Nullable<{}>
   relationships: APIRelationships<'organization' | 'user'> & {
-    games: {
-      data: {
-          type: "game",
-          id: string
-        }[]
-    }
+    games: APIData<{
+      type: "game",
+      id: string
+    }[]>
   }
 }

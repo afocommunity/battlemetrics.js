@@ -1,3 +1,3 @@
-declare interface APIResponse<T extends APIBase> {
+declare interface APIData<T extends APIBase> {
   data: T
 }

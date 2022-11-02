@@ -3,11 +3,11 @@ declare interface APIBan extends APIBase {
   type: `ban`;
   attributes: {
     autoAddEnabled: boolean;
-    expires: Nullable<string>;
+    expires?: Nullable<string>;
     id: `${number}`;
     identifiers: (number | APIIdentifier)[];
-    nativeEnabled: Nullable<boolean>;
-    note: Nullable<string>;
+    nativeEnabled?: Nullable<boolean>;
+    note?: Nullable<string>;
     orgWide: boolean;
     reason: string;
     timestamp: string;
@@ -16,5 +16,5 @@ declare interface APIBan extends APIBase {
   meta: {
     player: string;
   }
-  relationships: APIRelationships<'player'|'server'|'organization'|'user'|'banList'|'trigger'>
+  relationships: APIRelationships<'player' | 'server' | 'organization' | 'user' | 'banList' | 'trigger'>
 }
