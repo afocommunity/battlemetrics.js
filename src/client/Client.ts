@@ -1,3 +1,5 @@
+import { enumerable } from "../util/enumerable"
+
 export class Client {
 
   public options: ClientOptions
