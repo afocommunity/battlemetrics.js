@@ -1,2 +1,2 @@
 export { Client } from './client/Client';
-export {APIStructure} from '../definitions'
+export {APIDefinitions as APIStructure} from '../definitions'

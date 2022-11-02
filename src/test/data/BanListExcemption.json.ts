@@ -1,5 +1,5 @@
-import { APIStructure } from "../../../definitions"
-export const BanListExcemptionJSON: APIStructure.APIBanListExcemption = {
+import { APIDefinitions } from "../../../definitions"
+export const BanListExcemptionJSON: APIDefinitions.APIBanListExcemption = {
   "type": "banExemption",
   "id": "01234567-89ab-cdef-0123-456789abcdef",
   "attributes": {

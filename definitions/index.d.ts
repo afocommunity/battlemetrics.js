@@ -1,1 +1,1 @@
-export * as APIStructure from './api'
+export * as APIDefinitions from './api'

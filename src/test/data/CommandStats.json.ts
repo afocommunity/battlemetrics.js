@@ -1,5 +1,5 @@
-import { APIStructure } from "../../../definitions"
-export const CommandStatsJSON: APIStructure.APICommandStats = {
+import { APIDefinitions } from "../../../definitions"
+export const CommandStatsJSON: APIDefinitions.APICommandStats = {
   "id": "1:1",
   "type": "commandStats",
   "attributes": {

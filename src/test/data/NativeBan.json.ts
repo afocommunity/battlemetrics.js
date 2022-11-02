@@ -1,6 +1,6 @@
-import { APIStructure } from "../../../definitions";
+import { APIDefinitions } from "../../../definitions";
 
-export const NativeBanJSON: APIStructure.APINativeBan = {
+export const NativeBanJSON: APIDefinitions.APINativeBan = {
   "type": "banNative",
   "id": "01234567-89ab-cdef-0123-456789abcdef",
   "attributes": {
