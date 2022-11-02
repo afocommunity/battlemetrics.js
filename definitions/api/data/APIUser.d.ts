@@ -1,4 +1,4 @@
-export declare interface APIUser extends APIBase {
+declare interface APIUser extends APIBase {
   /**
    * unique identifier of user
    *

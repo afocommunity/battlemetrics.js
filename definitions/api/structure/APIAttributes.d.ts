@@ -1,1 +1,1 @@
-export declare type APIAttributes<T> = T
+declare type APIAttributes<T> = T

@@ -1,4 +1,4 @@
-export declare interface APIBanListExcemption extends APIBase {
+declare interface APIBanListExcemption extends APIBase {
   id: string;
   type: 'banExemption';
   attributes: APIAttributes<{

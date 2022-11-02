@@ -1,4 +1,4 @@
-export declare interface APIBan extends APIBase {
+declare interface APIBan extends APIBase {
   id: `${number}`;
   type: 'ban';
   attributes: APIAttributes<{

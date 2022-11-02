@@ -1,4 +1,4 @@
-export declare interface APIBase {
+declare interface APIBase {
   id: string;
   type: string;
 }

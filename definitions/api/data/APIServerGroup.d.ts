@@ -1,4 +1,4 @@
-export declare interface APIServerGroup extends APIBase {
+declare interface APIServerGroup extends APIBase {
   /**unique identifier of server group */
   id: string;
   type: 'serverGroup';

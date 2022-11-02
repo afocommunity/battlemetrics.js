@@ -1,4 +1,4 @@
-export declare interface APISession extends APIBase {
+declare interface APISession extends APIBase {
   /**Unique identifier of session */
   id: string;
   /**Resource Type */

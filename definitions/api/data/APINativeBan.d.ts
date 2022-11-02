@@ -1,4 +1,4 @@
-export declare interface APINativeBan extends APIBase {
+declare interface APINativeBan extends APIBase {
   id: string;
   type: 'banNative';
   attributes: APIAttributes<APIIdentifier & {
